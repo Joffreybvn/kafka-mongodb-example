@@ -10,6 +10,13 @@ A simple example of interaction between a Kafka Producer, a Topic, a Consumer an
 - Kafdrop: http://localhost:9000/
 - Mongo Express: http://localhost:8081/ 
 
+#### Run the Consumer and Producer:
+
+- `python consumer.py`
+- `python producer.py`
+
+## Other useful commands
+
 #### Shell into a Kafka Docker:
 
 `docker exec -it kafka-kafdrop_kafka_1 sh -c "cd /opt/kafka/bin && /bin/bash"`
@@ -18,11 +25,6 @@ A simple example of interaction between a Kafka Producer, a Topic, a Consumer an
 Optionnal - The topic will be created when the producer send a message, or when the consumer try to retrieve message from the topic.
 
 `./kafka-topics.sh --create --topic sample --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1`
-
-#### Run the Consumer and Producer:
-
-- `python consumer.py`
-- `python producer.py`
 
 ## Sources
 
